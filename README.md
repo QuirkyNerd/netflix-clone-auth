@@ -1,4 +1,4 @@
-# Netflix Clone with Authentication
+# Netflix Clone Auth
 
 ## Project Overview
 
