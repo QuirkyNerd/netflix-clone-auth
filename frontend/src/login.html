@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style2.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Login - Netflix</title>
+</head>
+<body>
+    <div class="upper">
+        <div class="logo">
+            <a href="#">
+                <img src="img/Netflix-Logo.png" class="img-logo"/>
+            </a>
+        </div>
+        <div class="login-div">
+            <form class="login" id="login-form">
+                <h1>Login</h1>
+
+                <div class="input-text">
+                    <input type="text" id="inputEmail" name="email" placeholder="Email or phone number" />
+                    <div class="warning-input" id="warningEmail" style="display:none;">
+                        Please enter a valid email or phone number.
+                    </div>
+                </div>
+                
+                <div class="input-text">
+                    <input type="password" id="inputPassword" name="password" placeholder="Password" />
+                    <div class="warning-input" id="warningPassword" style="display:none;">
+                        Your password must contain between 4 and 60 characters.
+                    </div>
+                </div>
+
+                <div id="message" class="message"></div> <!-- Message display area -->
+                
+                <div>
+                    <button type="submit" class="signin-button">Login</button>
+                </div>
+                
+                <div class="remember-flex">
+                    <div>
+                        <input type="checkbox">
+                        <label class="color_text">Remember me</label>
+                    </div>
+                    <div class="help">
+                        <a class="color_text" href="#">Need help?</a>
+                    </div>
+                </div>
+                
+                <div class="new-members">
+                    New to Netflix? <a href="signup.html" class="signup-link">Sign Up</a>.
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Axios for HTTP requests -->
+    <script src="js/script2.js"></script> <!-- Your JavaScript file -->
+</body>
+</html>

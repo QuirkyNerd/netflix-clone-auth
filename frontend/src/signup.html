@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Netflix</title>
+</head>
+<body>
+    <div class="upper">
+        <div class="logo">
+            <a href="#">
+                <img src="img/Netflix-Logo.png" class="img-logo" />
+            </a>
+        </div>
+        <div class="login-div">
+            <form class="login" id="signup-form">
+                <h1>Sign Up</h1>
+
+                <div class="input-text">
+                    <input type="text" id="inputUsername" name="username" placeholder="Username" required />
+                    <div class="warning-input" id="warningUsername" style="display: none;">
+                        Please enter a valid username.
+                    </div>
+                </div>
+
+                <div class="input-text">
+                    <input type="text" id="inputEmail" name="email" placeholder="Email or phone number" required />
+                    <div class="warning-input" id="warningEmail" style="display: none;">
+                        Please enter a valid email or phone number.
+                    </div>
+                </div>
+
+                <div class="input-text">
+                    <input type="password" id="inputPassword" name="password" placeholder="Password" required />
+                    <div class="warning-input" id="warningPassword" style="display: none;">
+                        Your password must contain between 4 and 60 characters.
+                    </div>
+                </div>4
+
+                <div>
+                    <button type="submit" class="signin-button">Sign Up</button>
+                </div>
+
+                <div>
+                    <input type="checkbox">
+                    <label class="color_text">Remember me</label>
+                </div>
+                <div class="new-members">
+                    Already have an account? <a href="login.html" class="signup-link">Login</a>.
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="message"></div> <!-- Message display area -->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script> <!-- Ensure the path is correct -->
+</body>
+</html>
